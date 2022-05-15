@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Created By Lx Rajput -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LX RAJPUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">ROHIT SHARMA</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about1">About</a></li>
+    <!--   <li><a href="#">Services</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li> -->
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="banner"></div>
+  <div class="about" id="about1">
+    <div class="content">
+      
+      <div class="op">
+       <h1>ROHIT SHARMA <br>SHARMA</h1>
+  </div>
+  <br>
+      <div class="hy">ABOUT ME :</div>
+      <p class="rj">HELLO EVERYONE <br>
+      I AM FROM RAJGARH, (M,P) <br>
+      I'AM ROHIT SHARMA
+      </p>
+      <br>
+      
+      <div class="d">
+        <h1 class="hy">CONTECT ME :</h1>
+        <p class="rj">WHATSAPP NO : 9754451783
+        <br>
+        PHONE NOM : 9754451783
+        <br>
+        EMAIL:rohit9754451783@gmail.com</p>
+        <y class="yt">
+   
+      </div>
+         <p class="yn">OUR YT CHANNEL : <a href="https://youtube.com/channel/UCblRJu6GPFbkrzlYdowbHOw" class="an">OUR YOUTUBE</a></p>
+        </y>
+      
+      
+      
+      
+    </div>
+  </div>
+
+ 
+      
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
